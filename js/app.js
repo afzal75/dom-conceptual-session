@@ -16,3 +16,27 @@
 //     })  
 // }
 
+let count = 0
+
+// document.getElementById('add').addEventListener('click', function(e){
+//     count++;
+//     control('count');
+//     // document.getElementById('count').innerText=count;
+// })
+// document.getElementById('minus').addEventListener('click', function(e){
+//     count--;
+//     control('count')
+//     // document.getElementById('count').innerText=count;
+// })
+function add (e) {
+    count++;
+    control('count');
+}
+function minus (){
+    count--;
+    control('count');
+}
+
+function control (id) {
+    document.getElementById(id).innerText=count;
+}
